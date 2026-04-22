@@ -1,0 +1,86 @@
+/* 1. RESETEO BÁSICO */
+/* El asterísco (*) significa que aplica a todo */
+*{
+    margin: 0;
+    padding: 0;
+    /* Hace que el tamaño de las cajas sea predecible */
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(122, 122, 122);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* 2. PINTADO DE LAS ZONAS PRINCIPALES */
+header{
+    /* Background color = color de fondo */
+    background-color: rgb(75, 75, 75);
+    /* color = color de fuente */
+    color: rgb(255, 255, 255);
+    /* text-align = centra el texto */
+    text-align: center;
+    /* padding = espacio hacia ADENTRO de la caja */
+    padding: 20px;
+    
+}
+
+footer{
+    background-color: rgb(75, 75, 75);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    /* margin = espacio hacia AFUERA de la caja (lo empuja hacia abajo) */
+    margin-top: 20px;
+}
+
+/* 3. EL MODELO DE LA CAJA */
+.caja{
+    background-color: rgb(75, 75, 75);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+/* font-weight : bold = negrita */
+    font-weight: bold;
+/* Damos formato a la caja */
+    padding: 15px; /*1. Engorda la caja hacia adentro */
+    border: 3px solid rgb(55, 55, 55); /* Formato del borde de la caja */
+    margin: 15px; /* Separa esta caja de las otras */
+    border-radius: 10px; /* Redondeo de las esquinas */
+    width: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.caja:hover{
+    background-color: beige;
+    cursor: pointer;
+}
+
+.anuncio{
+    background-color: beige;
+    color: black;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+/* 4. LA MAGIA DE FLEXBOX (Poniendo orden) */
+nav{
+    background-color: rgb(85, 85, 85);
+    color: white;
+    padding: 15px;
+    /* Activar FLEXBOX */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+background-image: url(img/img1.jpg!w700wp)
+}
+
+/* Efecto hover : Cambia de color al pasar el cursor por encima */
+.link:hover{
+    color: rgb(75, 75, 75);
+    cursor: pointer;
+}
