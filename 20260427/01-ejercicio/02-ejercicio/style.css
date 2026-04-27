@@ -1,0 +1,23 @@
+
+
+.gallery{
+    display: grid;
+    /*2 columnas que ocupan lo mismo*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /*Separación entre imagenes*/
+    max-width: 1000px; /*Mayor resolución*/
+    margin: 0 auto;
+}
+
+.thumb{
+    /*Obligamos que todas las imagenes midan lo mismo*/
+    height: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.thumb :hover{
+    transform: scale(1.05); /*Efecto zoom*/
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); 
+}
