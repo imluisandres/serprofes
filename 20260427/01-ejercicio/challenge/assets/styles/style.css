@@ -4,27 +4,39 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .gallery{
     display: grid;
-    /*2 columnas que ocupan lo mismo*/
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px; /*Separación entre imagenes*/
-    max-width: 1000px; /*Mayor resolución*/
-    margin: 0 auto;
+    gap: 40px;
+    padding: 40px;
 }
-
 .thumb{
-    height: 250px;
-    overflow: hidden;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    padding: 20px;
+    background: #eaeaea;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.thumb img {
+    max-width: 70%;
+    height: auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
 .thumb :hover{
     transform: scale(1.05); 
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); 
+}
+.thumb2{
+    background: #eaeaea;
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 ul{
@@ -35,21 +47,19 @@ a{
     text-decoration: none; 
     color: white; 
 }
-
 body{
-    height: 100vh; 
+    min-height: 100vh; 
     display: grid; 
-
     grid-template-columns: 250px 1fr;
-
     grid-template-rows: 60px 1fr 60px;
     grid-template-areas: 
     "header header"
     "nav main"
     "footer footer"
     ;
+    background-color: #1e1e1e;
+    font-family: sans-serif;
 }
-
 header{
     grid-area: header;
     background-color: black;
@@ -64,9 +74,26 @@ nav{
     background-color: black;
     padding: 20px;
 }
+
+nav li{
+    margin-bottom: 15px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+}
+
+nav a:hover{
+    background: #353333;
+    border-radius: 5px;
+    transform: scale(1.05); 
+}
 main{
     grid-area: main;
-    background-color: #ffffff;
+    background-color: #353333;
     padding: 30px;
 }
 footer{
@@ -76,4 +103,11 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+h2{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    justify-content: center;
 }
