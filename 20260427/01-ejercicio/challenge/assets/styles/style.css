@@ -21,7 +21,7 @@
     text-align: center;
 }
 .thumb img {
-    max-width: 70%;
+    max-width: 100%;
     height: auto;
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
@@ -57,12 +57,12 @@ body{
     "nav main"
     "footer footer"
     ;
-    background-color: #1e1e1e;
+    background-color: #353333;
     font-family: sans-serif;
 }
 header{
     grid-area: header;
-    background-color: black;
+    background-color: rgb(37, 37, 37);
     color: white;
     display: flex;
     align-items: center;
@@ -71,7 +71,7 @@ header{
 }
 nav{
     grid-area: nav;
-    background-color: black;
+    background-color: #292727;
     padding: 20px;
 }
 
@@ -87,7 +87,7 @@ nav a{
 }
 
 nav a:hover{
-    background: #353333;
+    background: rgb(37, 37, 37);
     border-radius: 5px;
     transform: scale(1.05); 
 }
@@ -98,7 +98,7 @@ main{
 }
 footer{
     grid-area: footer;
-    background-color: black;
+    background-color: rgb(37, 37, 37);
     color: white;
     display: flex;
     justify-content: center;
@@ -110,4 +110,9 @@ h2{
     align-items: center;
     padding-left: 20px;
     justify-content: center;
+}
+h3{
+text-align: center;
+color: black;
+padding: 20px;
 }
