@@ -70,7 +70,7 @@ body {
     width: 100%;
     padding: 15px;
     background: linear-gradient(135deg, #bb832f 0%, hsl(177, 53%, 51%) 100%);
-    color: white;
+    color: #333;
     border: none;
     border-radius: 8px;
     font-weight: bold;
@@ -78,7 +78,7 @@ body {
     transition: 0.3s;
 }
 .btn-enviar:hover{
-    color: white;
+    color: #333;
     background: linear-gradient(135deg, #bb832f 0%, hsl(177, 53%, 51%) 100%);
     transform: scale(1.02); /*EL boton crece un poco*/
 }
