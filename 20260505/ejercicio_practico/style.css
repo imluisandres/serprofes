@@ -1,0 +1,77 @@
+/* AGREGANDO ESTILOS A LAS TARJETAS */
+/* 1. RESETEO BASICO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #f0f2f5;
+    padding: 50px;
+}
+
+/* 2. RESETEO FLEXBOX */
+.contenedor-tarjetas{
+    display: flex; /*Tarjetas alineadas horizontalmente*/
+    justify-content: center; /*Tarjetas centren de la pantalla*/
+    gap: 40px; /*Separación perfecta entre tarjeta y tarjeta*/
+    margin-top: 40px;
+}
+
+/* DISEÑO BASE DE LA TARJETA */
+.tarjeta{
+    background-color: white;
+    width: 320px;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* Magia 1 : Sombra estática suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.tarjeta h3{
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.precio{
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.tarjeta p {
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6; /*Interlineado 1.6 veces el tamaño de la letra*/
+}
+
+.tarjeta button{
+    padding: 12px 30px;
+    margin-top: auto;
+    border: none;
+    border-radius: 15px;
+    background-color: aqua;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /*Transición suave de color*/
+  }
+
+ .tarjeta button:hover{
+    background-color: #bdc3c7;
+ }
+
+.imagen_zapatillas{
+    border-radius: 30px;
+    justify-content: center;
+}
